@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="is">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"> 
+    <link href="https://fonts.googleapis.com/???" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body id="top">
+      <STYLE>A {text-decoration: none;} </STYLE>
+    <header class="container">
+      <div class="logo">
+        <img src="\verkefni5\img\Wilson.jpg">
+        <h1>Yfirhorf <wbr>Verkefni </h1>
+        </div>
+        <div class="h-col-2">
+          <!-- IMPORTANT --Finna Hash fyrir Icons-->
+          <nav class="topnav">
+              <ul>
+                <span class="icon-heart"></span>
+                <a href="#top"> Verk. 5 ~ 6 </a>
+              </ul>
+              <ul>
+                <span class="icon-heart"></span>
+                <a href="#ummig">	Um Mig </a>
+              </ul>
+              <ul>
+                <span class="icon-heart"></span>
+                <a href="#áhugamál"> Áhugamál </a>
+              </ul>
+              <ul>
+                <span class="icon-heart"></span>
+                <a href="#verkefni"> Verkefni </a>
+              </ul>              
+          </nav>          
+        </div>  
+        <div class="h-col-2"></div>
+    </header>
+    <section class="container lead">   <!-- Intro -->
+      <h1>Verkefni 5 Myndvinnsla</h1>
+      <p>Í beinu framhaldi af 4.4 verkefni sem er að skippuleggja eigin vefsíðu á að finna myndir til að setja á vefsíðuna. Efni vefsins er valfrjálst en upplagt er að gera ferilskrá ásamt efnisyfirliti yfir verkefnin sem unnin eru í áfanganum og fleiri áföngum.  Skipulag (layout), letur- og litaval er í þínum höndum.
+      </p>
+    </section>
+    <section class="container lead">   <!-- Intro -->
+      <h1>Verkefni 6 snjallsíða</h1>
+      <p>Vefsíðan þín á að aðlagast mismunandi skjástærðum í farsíma-, spjaldtölvu- og fartölvuskjáum.   Það á að nota uppsetninguna sem þú ert búin/n að hanna í <br> 4. og 5. verkefni. Algengasta aðferðin við að hanna snjállsíður er að byrja á að hanna vefsíðu fyrir litla skjái þe farsíma, næsta stig eru spjaldtölvuskjáir og síðast fartölvu- og borðtölvuskjáir. </p>
+      <hr>
+    </section>
+      <section class="container um-col-2">
+        <div class=umtxt>
+          <h2 id="ummig">Um mig</h2>
+          <p> Ég heiti sveinn, og áhugamál mínn eru leikir, forritun, íþróttir, </p>
+          <p> Í þessari síðu er linkar af öllum Veforitun síðum mínum, og myndir af ýmsum leikjum sem ég hef áhrif á.  </p>
+        </div>
+        <figure class="umfig">
+          <img src="\verkefni5\img\Python_Logo.png" class="beigebg">
+          <figcaption class="padd-2">Python</figcaption>
+        </figure>
+      </section> <!-- Intro endar -->
+      <section class="container col-m-3"> <!-- 3 myndir í röð -->
+        <figure>
+          <img src="\verkefni5\img\Html.png" class="img1em">
+          <figcaption>Html</figcaption>
+        </figure>
+        <figure>
+          <img src="\verkefni5\img\ibjjf.png" class="img1em">
+          <figcaption>Brazilian Jiu Jitsu</figcaption>
+        </figure>
+        <figure>
+          <img src="\verkefni5\img\Binary.png" class="img1em">
+          <figcaption>Binary</figcaption>
+        </figure>
+      </section><!-- 3 mynda röð endar -->
+      <section class="container">
+          <div class="large-img">
+            <hr>
+            <h2>Leikir</h2>
+            <picture>
+              <wbr>
+              <img src="\verkefni5\img\Games.png">
+            </picture>
+          </div>
+          <h3>Hérna er Stór PNG mynd af ýmsum leikjum</h3>
+          <hr>
+          </section>
+      <section class="container">  <!--áhugamál-->
+        <h2 id="áhugamál">Áhugamál</h2>
+        <div class="col-3">
+          <section>
+            <p>Áhugamál mínn eru Tölvuleikir, hér á neðan eru myndir af leikjum sem ég hef áhrif á og hljóðskrá.</p>
+            <blockquote class="beigebg">
+              <h3>Hljóðskrá</h3>
+              <p>Intro lag frá The Witcher</p>
+              <audio id="MyAudio" controls  style="background: transparent;"><!-- -"autoplay" startar tónlist um leið og síðan hlest inn -->
+                  <source src="Audio/The_Trail.mp3" type="audio/mp3" >                  
+              </audio>
+              <!--Takar fyrir Volume Control-->
+              <button onclick="setTwentyVolume()" type="button">Volume  20%</button>
+              <button onclick="setHalfVolume()" type="button">Volume 50%</button>
+              <button onclick="setFullVolume()" type="button">Volume  100%</button>
+              <!--Script Fyrir Volume Control-->
+              <script>
+              var x = document.getElementById("MyAudio"); 
+              function setTwentyVolume() { 
+                x.volume = 0.2;
+              }
+              function setHalfVolume() { 
+                x.volume = 0.5;
+              } 
+              function setFullVolume() { 
+                x.volume = 1.0;
+              } 
+              </script> 
+            </blockquote>
+          </section>
+          <div class="mh-col-2">
+          <!-- 2 myndir í röð -->
+            <figure>
+              <img src="\verkefni5\img\Witcher_logo2.png">
+              <figcaption>Leikur - The Witcher 3</figcaption>
+            </figure>
+            <figure>
+              <img src="\verkefni5\img\Destiny_2_logo.png">
+              <figcaption>Leikur - Destiny 2</figcaption>
+            </figure>  
+            <!-- 2 myndir í röð -->
+            <figure>
+              <img src="\verkefni5\img\Revelation_Online.png">
+              <figcaption>Leikur - Revelation Online</figcaption>
+            </figure>
+            <figure>
+              <img src="\verkefni5\img\Divinity.png">
+              <figcaption>Leikur - Divinity Original Sin</figcaption>
+            </figure>   
+          </div><!-- myndir enda -->
+        </div>
+        <hr>
+      </section><!-- áhugamál endar -->
+      <section class="container">
+        <h2>The Witcher</h2>
+        <div class="iframe-col-2">
+          <iframe 
+            class="gluggi"
+            name="videorammi"
+            src="https://www.youtube.com/embed/JFUsPfuwjpw" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+          </iframe><!--tek út width="560" height="315" bæti við class-->
+        </div>
+      </section>
+      <section class="container">
+        <h2>Tækniskólinn</h2>
+        <div class="col-2"><!--kort-->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1740.1692209839498!2d-21.927122383745022!3d64.1413482835929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d674cb65ecde75%3A0x11daee4c4c757a2f!2zVMOma25pc2vDs2xpbm4!5e0!3m2!1sen!2sis!4v1541599281802" 
+          class="gluggi" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </section><!--kort endar-->
+      <footer class="container" id="verkefni">
+          
+        <h2>Verkefnalisti</h2>
+          
+        <section class="col-2">    
+          <nav>             
+            <ul class="v-takn">
+              <li>Verkefni 1.
+                <a href="https://sveinnoli.github.io/verkefni1/">HTML og CSS</a>
+              </li>
+              <li>Verkefni 2.
+                <a href="https://sveinnoli.github.io/verkefni2/">Box módelið</a>
+              </li>
+              <li>Verkefni 3.1
+                <a href="https://sveinnoli.github.io/verkefni3/">Skipulag 3.1</a>
+              </li>
+              <li>Verkefni 3.2
+                <a href="https://sveinnoli.github.io/verkefni3/Verkefni%203.1/indexsida2.html">Leturfræði 3.2</a>
+              </li>
+              <li>Verkefni 4.
+                <a href="https://sveinnoli.github.io/verkefni4/">Bakgrunnar og efnisyfirlit</a>
+              </li>
+            </ul>
+        </nav>
+            
+            <nav>
+                
+            <ul class="v-takn">
+            <li>Verkefni 4 
+              <a href="verkefni-4/" target="videorammi">
+                í iframe ramma 5.3 </a>
+            </li>
+            <li>
+              Verkefni 5. Myndvinnsla (Þessi síða)
+            </li>
+            <li>
+              Verkefni 6. Sveigjanleg hönnun (Þessi síða)
+            </li>
+            <li>
+              Photopea: <a href="https://photopea.com">
+              Myndvinnsluforrit á netinu</a>
+            </li>
+            <li>Lesefni: <a href="http://learn.shayhowe.com/html-css/adding-media/">
+                learn.shayhowe.com</a>
+            </li>
+            </ul>
+          </nav><!--tenglar enda-->  
+        </section>
+      </footer>
+      <div class="copy">
+        <div><img src="\verkefni5\img/github-octocat.svg" width="50px" height="55px" title="github vefsíðan"></div>
+        <p>&copy; 2019 Sveinn Óli Guðmundsson &nbsp;</p>
+      </div>
+  <a href="#top" class="btop" title="Efst á síðu"> ⇧ </a>
+  </body>

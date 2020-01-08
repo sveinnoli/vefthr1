@@ -1,0 +1,54 @@
+ * {
+    box-sizing: border-box;
+}
+body {
+	max-width: 60em;
+	 margin: 0 auto;
+	 font-family: sans-serif;
+}
+
+footer p {
+  text-align: center;
+}
+
+.gulur {
+	background-color: yellow; 
+}
+.raudur {
+	background-color: red; 
+}
+.graenn {
+	background-color: lime;
+}
+.blar {
+	background-color: cyan; 
+}
+.box {
+	font-size: 1.2em;
+	height: 5em;
+}
+.box{ 
+	Display:Flex; 
+	Justify-content: center; 
+	Align-items:center; 
+	box-size: 1.2em; 
+	Height: 5em; 
+} 
+.row{ 
+	display: flex; 
+	Flex-flow: row-reverse; 
+}  
+div { 
+   Flex-grow: 1; 
+   Flex-shrink:1; 
+   Flex-basis:auto; 
+}  
+.col{  
+   Display: flex; 
+   Flex-flow: column-reverse; 
+} 
+.nav{
+    margin: 1em;
+    display:flex;
+    justify-content: center;
+}

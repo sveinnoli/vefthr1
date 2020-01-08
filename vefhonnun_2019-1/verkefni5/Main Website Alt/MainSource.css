@@ -1,0 +1,531 @@
+* {
+  box-sizing: border-box;
+} 
+/* ====== GRID Area ====== */
+/* dálkar í header */
+.logo {
+grid-area: logo; 
+}
+.topdiv {
+grid-area: topdiv;
+}
+.umtxt {
+grid-area: umtxt;
+}
+.umfig {
+grid-area: umfig;
+}
+/* ====== GRID Template Areas ===== */
+header {
+display: grid;
+grid-gap: 0; /* bil á milli dálka */
+grid-template-areas:
+"topdiv"
+"logo";
+}
+.um-col-2 {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-areas:
+"umfig"
+"umtxt";
+}
+/* == base == */
+html {
+scroll-behavior: smooth;
+}
+body {
+background:none;
+color: #333;
+font: 400 1em/1.5 "Open Sans", sans-serif;
+margin: 0;
+padding: 1em;
+}
+
+.beigebg { 
+background: linear-gradient(to top, rgba(247,211,126, 0.8), rgba(255,255,255, 0.5));
+}
+/* STANDARD */
+img {
+max-width: 100%;
+height: auto;
+}
+
+/*========================================
+Grid 0em til 48em
+========================================*/
+.col-2 {
+display: grid;
+grid-template-columns: 1fr;
+grid-gap: 2em;
+}
+.col-3 {
+display: grid;
+grid-template-columns: 1fr;
+grid-gap: 1em;
+}
+/*==== Header, iframe logo, & mótorhjól ====*/
+.logo,
+.iframe-col-2,
+.mh-col-2,
+.h-col-2 {
+display: grid;
+grid-template-columns: 1fr;
+grid-gap: 0;
+}
+.logo {
+justify-items: center;
+}
+.logo img{
+width: 3em;
+margin:1em 0 0 0;
+}
+.logo h1 {
+font-size: 2.4em;
+text-transform: uppercase;
+text-align: center;
+color: #0064CE;
+margin: .3em 0 0 0;
+line-height: 1.1;
+}
+
+.tagline {
+display:none;
+}
+/* flex column */
+.row-wrap,
+.row {
+display: flex;
+flex-flow: row wrap;
+}
+.copy {
+max-width: 60em;
+margin: 1em auto 3em auto;
+display: grid;
+grid-template-rows: 1fr 1fr;
+justify-items: center;
+}
+.copy p {
+margin-top:0;
+}
+/*
+========================================
+Typography
+========================================
+*/
+h1, h2, 
+h3, h4 {
+color: #0064CE;
+font-weight: 300;
+}
+h2 {
+margin: 2em 0 .5em 0;
+}
+.blokk {
+text-align: justify;
+}
+blockquote {
+padding: .6em;
+background-color: rgba(247,211,126, 0.4); /* = 60% transparent rgb a= alfa layer */
+border-radius: .5em;
+text-align: center;
+margin: 0;
+}
+/*
+========================================
+Links - navigation
+========================================
+*/
+a {
+color: #0064CE;
+text-decoration: none;
+font-size: 1.1em;
+}
+a:hover {
+color: #0af;
+}
+
+header a,
+footer a,
+footer p {
+color: #0064CE;
+font-size: .95em
+}
+header a:hover,
+footer a:hover {
+color: #F7D37E;
+}
+.topnav {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: .5em;
+}
+.topnav a{
+display: block;
+border: 1px solid;
+padding:0 1em 0 1em; 
+font-size: .9em;
+font-weight: 400;
+line-height: 1.6;
+letter-spacing: 0;
+text-transform: uppercase;
+text-align: center;
+}
+figure {
+margin:.3em 0;
+}
+figcaption {
+font-size: .8em;
+font-style: italic;
+text-align: left;
+}
+
+/*========================================
+Lead - áherslutexti
+========================================*/
+.lead h1 {
+font-size: 1.4em;
+line-height: 1.6em;
+color: #0064CE;
+font-weight: 100;
+text-align: center;
+}
+.lead p {
+font-size: 1.1em;
+line-height: 1.6em;
+margin-bottom: 4em;
+text-align: left;
+}
+/*========================================
+Lists
+========================================*/
+dt {
+color: #0064CE;
+border: 1px solid #0064CE;
+border-width: 1px 0 0 0;
+margin-top: .3em;
+}
+dd a {
+display: block;
+}
+dd a:hover {
+  color: orange;
+}
+.v-takn {
+list-style-image: url('img/takn.gif'); /* ath! slóðina */
+line-height: 1.8;
+}
+
+/*========================================
+efnisyfirlit
+========================================*/
+.innriMenu {
+display: flex;
+flex-flow:row;
+
+background-color: #0064CE;
+border-radius: .4em;
+margin-top: 2em;
+}
+.innriMenu a {
+display: block;
+padding: .4em 1em;
+color: #F7D37E;
+background-color: #0064CE;
+border-right: 1px solid #fff;
+font-size: 1em;
+}
+.innriMenu a:hover {
+color: #0064CE;
+background-color: #F7D37E;
+}
+.innriMenu a:first-child {
+border-left: 1px solid #fff;
+margin-left: 3em;
+}
+/*========================================
+Link - to the top
+========================================*/
+.btop {
+position: fixed;
+bottom: 1em;
+right: 1em;
+
+display: block;
+border-radius: 10%;
+padding: 0 .4em;
+font-size: 2em;
+color: #0064CE;
+background: linear-gradient(to top, rgba(247,211,126, 0.8), rgba(255,255,255, 0.5));
+}
+.btop:hover,
+.btop:active {
+background: rgba(247,211,126, 0.5);
+color: #fff;
+border-radius: 10%;
+}
+/* bil á milli dálka */
+.mtop0 {
+margin-top: 0;
+}
+.padTop-4em {
+padding: 4em 0 0 0;
+}
+
+/* ========================================
+ icon fonts
+ ======================================== */
+@font-face {
+font-family: 'icomoon';
+src:  url('fonts/icomoon.eot');
+src:  url('fonts/icomoon.eot#iefix') format('embedded-opentype'),
+  url('fonts/icomoon.ttf') format('truetype'),
+  url('fonts/icomoon.woff') format('woff'),
+  url('fonts/icomoon.svg#icomoon') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"],
+[class^="foot-"], [class*=" foot-"] {
+/* use !important to prevent issues with browser extensions that change fonts */
+font-family: 'icomoon' !important;
+/*speak: none;*/
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+
+/* Better Font Rendering =========== */
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+.foot-vsh-logo:before, 
+.icon-vsh-logo:before {
+content: "\e901";
+}
+.icon-home:before {
+content: "\e900";
+}
+.icon-image:before {
+content: "\e90d";
+}
+.icon-mobile:before {
+content: "\e958";
+}
+.icon-heart:before {
+content: "\e9da";
+}
+.icon-facebook2:before {
+content: "\ea91";
+}
+.icon-github:before {
+content: "\eab0";
+}
+.icon-android:before {
+content: "\eac0";
+}
+.icon-soundcloud2:before {
+content: "\eac4";
+}
+.icon-html-five:before {
+content: "\eae4";
+}
+.foot-vsh-logo {
+font-size: 1.2em;
+}
+audio {
+width:180px;
+}
+
+.gluggi {
+width:18em; /*228px;*/ 
+height:10em; /*160px;*/ 
+}
+
+/* ========================================
+ viðmið 25em 
+ ======================================== */
+ @media screen and (min-width: 25em) {
+  .gluggi {
+    width:23em; /*368px;*/ 
+    height:12.7em; /*204px;*/ 
+  }
+}
+
+/* ========================================
+ viðmið 30em - 480px
+ ======================================== */
+@media screen and (min-width: 30em) {
+ .gluggi {
+  width:28em;     /*448px*/
+  height:15.75em; /*252px;*/ 
+}
+}
+/* ========================================
+ viðmið 37.5 - 600px
+ ======================================== */
+@media screen and (min-width: 37.5em) {
+
+.um-col-2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr ;
+  grid-gap: 2em;
+  grid-template-areas:
+  "umtxt umfig";
+}
+  /*======  Grid  ======*/
+  .col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+  }
+  .col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+  }
+  .gluggi {
+    width:35em;     /*560px;*/
+    height:19.7em; /*315px;*/
+  }
+}
+/* ========================================
+ viðmið 48em +
+ ======================================== */
+@media screen and (min-width: 48em) {
+body {
+  padding: 0;
+  background: #fff url("img/body-bg.png") -100px bottom fixed no-repeat;
+}
+.container {
+  margin: 0 auto;
+  width: 46em;  /* ath ! engin breidd tilgreind á body */
+  padding:0;
+  border: 0px solid;
+}
+header {
+  display: grid;
+  grid-gap: 0; 
+  grid-template-areas:
+    "logo topdiv"; /* 2 dálkar */
+}
+
+.h-col-2 {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  grid-gap: 2em;
+}
+.logo {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-gap: 1em;
+  justify-items: start;
+  margin-top: 1em; 
+}
+.logo h1 {
+  font-size: 3em;
+}
+.logo img{
+  width: 5em;
+  margin:1em 0 0 0;
+}
+.topnav {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0;
+}
+.topnav a{
+  border: 0;
+  border-bottom: 1px solid;
+  padding:0 1em 0 1em; 
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  text-align: right;
+}
+.topnav a:first-child{
+  border-top: 1px solid;
+}
+/* óskuð breidd / upphafleg breidd 560 =  % útkoman * upphafleg hæð */
+.gluggi {
+  width:37.75em; /*700px;*/ 
+  height:24.6em; /*394px;*/ 
+}
+.mh-col-2 {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+}
+.topdiv {
+  margin-top:3em;
+}
+.f-container {
+  margin: 0 auto;
+  width: 48em;  
+  padding:1em;
+}
+}
+/*========================================
+60em +
+========================================*/
+@media screen and (min-width: 60em) {
+.container {
+  margin: 0 auto;
+  width: 60em;  
+  padding:0;
+}
+
+.tagline {
+  display: block;
+  margin: 1em 0 2em 0;
+  text-align: right;
+  color:#0064CE;
+  font-weight: normal;
+}
+.lead p{
+  text-align: center;
+  max-width: 40em;
+  margin: 0 auto;
+}
+/* iframe dálkur */
+.iframe-col-2 {
+display: grid;
+grid-template-columns: 2fr 1fr;
+grid-gap: 2em;
+}
+.logo {
+  margin-top: 3em; 
+}
+.logo h1 {
+  font-size: 4em;
+}
+.m-2em {
+  margin-top: -6em;
+}
+}
+/*========================================
+80em +
+========================================*/
+@media screen and (min-width: 80em) {
+.container {
+  margin: 2em auto;
+  max-width: 70em;  
+  padding:0;
+  border: 0px solid;
+}
+.lead p {
+  max-width: 50em;
+}
+.gluggi {
+  width:50em; /*800px;*/ 
+  height:28.125em; /*450px;*/ 
+}
+}
+/*========================================
+100em +
+========================================*/
+@media screen and (min-width: 100em) {
+
+}

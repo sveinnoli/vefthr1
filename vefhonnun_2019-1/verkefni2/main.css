@@ -1,0 +1,46 @@
+h1 {
+    border: 2px solid green;
+    text-align: center;
+}
+.box {
+    border: 3px solid red;
+    padding: 2em;
+    color: red;
+}
+.box2 {
+    margin-top: 1em;
+    border: 3px solid red;
+    padding: 1em;
+}
+.box2 h1 {
+    border:3px dashed blue;
+    padding: 3px;
+    color:blue;
+}
+.blokk li {
+    border: 4px dashed green;
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+.inline li{
+    display:inline;
+    border: 2px dashed blue;
+    padding: 1em;
+    margin-bottom: 1em;
+    margin-right: 2em;
+    color: red;
+}
+.inlineblokk li{
+    display:inline-block;
+    border: 2px dashed red;
+    padding: 1em;
+    margin: 1em;
+    margin-top: 2em;
+    color:color;
+}
+.nav{
+    margin: 1em;
+    display:flex;
+    justify-content: center;
+}

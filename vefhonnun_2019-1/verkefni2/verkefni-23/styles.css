@@ -1,0 +1,38 @@
+.body {  
+    box-sizing: border-box;
+    Max-width: 50em; 
+}
+.box{  
+   box-sizing: border-box;
+   Width: 50%;  
+   float:left;
+   Border: 2px solid;
+   Padding: 1em; 
+}
+.box2{
+    box-sizing: border-box;
+    border: 1px solid;
+    padding: 1em;
+    display:grid;
+}
+.box2 h2{
+    text-align:center;
+}
+.bigL{  
+   Float:left; 
+   Font-size: 4em; 
+   Padding: 0 .3em; 
+} 
+Img{ 
+   Max-width: 100%; 
+   Height:auto; 
+} 
+.imgR{ 
+    Float:right; 
+    Width: 50%;
+}
+.nav{
+    margin: 1em;
+    display:flex;
+    justify-content: center;
+}

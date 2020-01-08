@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Verkefni 5 ~ 6 - snjallsíða</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="MainSource.css">
+	<link rel="icon" type="image/ico" href="img/vsh-logo-svg.png"><!--32px tákn í flipa-->
+  </head>
+  <body id="top">
+	<header class="container h-col-2">
+	  <div class="logo">
+			<img src="img/vsh-logo.svg">
+			<h1>Vefsíðu<wbr>hönnun </h1>
+	  </div>
+		<div class="topdiv">
+			<nav class="topnav">
+				<a href="#top">	Verk. 5 ~ 6 <span class="icon-home"> </span></a>
+				<a href="#ummig">Um mig  <span class="icon-heart"> </span></a>
+				<a href="#áhugamál">Áhugamál <span class="icon-android"> </span></a>
+				<a href="#verkefni">Verkefni  <span class="icon-html-five"> </span></a>
+			</nav>
+		</div>
+	</header>
+	<section class="container lead">   <!-- Intro -->
+		<h1>Verkefni 5 Myndvinnsla</h1>
+		<p>Í beinu framhaldi af 4.4 verkefni sem er að skippuleggja eigin vefsíðu á að finna myndir til að setja á vefsíðuna. Efni vefsins er valfrjálst en upplagt er að gera ferilskrá ásamt efnisyfirliti yfir verkefnin sem unnin eru í áfanganum og fleiri áföngum.  Skipulag (layout), letur- og litaval er í þínum höndum.
+		</p>
+	</section>
+	<section class="container lead">   <!-- Intro -->
+		<h1>Verkefni 6 snjallsíða</h1>
+		<p>Vefsíðan þín á að aðlagast mismunandi skjástærðum í farsíma-, spjaldtölvu- og fartölvuskjáum.   Það á að nota uppsetninguna sem þú ert búin/n að hanna í 4. og 5. verkefni. Algengasta aðferðin við að hanna snjállsíður er að byrja á að hanna vefsíðu fyrir litla skjái þe farsíma, næsta stig eru spjaldtölvuskjáir og síðast fartölvu- og borðtölvuskjáir. </p>
+		</p>
+	</section>
+	<section class="container">
+		<picture>
+			<source srcset="img/motorcycle-480.jpg" media="(max-width:37.5em)">
+			<source srcset="img/motorcycle-960.jpg" media="(max-width:60em)">
+			<source srcset="img/motorcycle1.png"><!-- 960 ~ 1600 stærð -->
+			<img src="img/motorcycle-960.jpg"> <!-- e9 og e10 vafrar -->
+		</picture>
+	</section>
+	<section class="container um-col-2 m-2em">
+			<p>Í 6. verkefni skoðum við hvering hægt er að skipta út stórum myndum yfir í litlar myndir. Stóra myndin af mótorhjólinu er .png, 1600px að breidd með gagnsæjum maska og er því of stór fyrir skjái sem eru 760px eða 480px breiðir. Hér notum við <strong>&lt; picture &gt;</strong> tagið til að ákveða hvað stærð af myndinni birtist á skjánum.</p>
+		</div>
+		<div></div>
+	</section>
+	<section class="container um-col-2">
+	  <div class=umtxt>
+			<h2 id="ummig">Um mig</h2>
+			<p>Ferilskrá inniheldur allar helstu upplýsingar um umsækjandann og það sem hann hefur fengist við síðustu árin. Ferilskráin skal vera sett upp á einfaldan og stílhreinan hátt. </p>
+			<p>Efst eða neðst í ferilskránni er nafn, heimilisfang, símanúmer, tölvupóstfang og kennitala. Gott er að hafa þessar upplýsingar listaðar upp vinstra megin og setja góða passamynd hægra megin. Mikilvægt er að velja myndir sem hæfa ferilskránni.  </p>
+	  </div>
+	  <figure class="umfig">
+			<img src="img/forbes.png" class="beigebg">
+			<figcaption class="padd-2">PNG mynd með gagnsæjum maska og CSS bakgrunni</figcaption>
+	  </figure>
+	</section> <!-- Intro endar -->
+	<section class="container col-3"> <!-- 3 myndir í röð -->
+		<figure>
+			<img src="img/baby.jpg" class="img1em">
+			<figcaption>Harley Davidsson ár 1997</figcaption>
+		</figure>
+		<figure>
+			<img src="img/angry-boy.jpg" class="img1em">
+			<figcaption>Harley Davidsson ár 2007</figcaption>
+		</figure>
+		<figure>
+			<img src="img/Young-Man.jpg" class="img1em">
+			<figcaption>Harley Davidsson ár 2017</figcaption>
+		</figure>
+	</section><!-- 3 mynda röð endar -->
+	<section class="container">  <!--áhugamál-->
+		<h2 id="áhugamál">Áhugamál</h2>
+		<div class="col-2">
+			<section>
+				<p>Hér er tilvalið að telja upp helstu áhugamál og fjalla um þau, setja inn myndir, video og hljóðskrár, allt eftir því hvað um er rætt.</p>
+				<p>Motorhjólamyndirnar hér eru dæmi um 2 dálka uppröðun innan 2 dálka.</p>
+				<blockquote class="beigebg">
+					<h3>Hljóðskrá</h3>
+					<p>Meðfylgjandi verklýsingunni er hljóðskrá sem á að setja á vefsíðuna. Þú getur sett inn aðra hljóðskrá ef þú villt.</p>
+					<p>Athugið að hjóðskráin á ekki að spilast fyrr en notandi ákveður að hlusta á hana.</p>
+					<audio controls  style="background: transparent;"><!-- -"autoplay" startar tónlist um leið og síðan hlest inn -->
+						<source src="audio/Steppenwolf-BornToBeWild.mp3" type="audio/mp3">
+					</audio>
+				</blockquote>
+			</section>
+			<div class="mh-col-2">
+			<!-- 2 myndir í röð -->
+				<figure>
+					<img src="img/motorcycle-480.jpg">
+					<figcaption>Harley Davidsson árgerð 1957</figcaption>
+				</figure>
+				<figure>
+					<img src="img/motorcycle2.jpg">
+					<figcaption>Harley Davidsson árgerð 1967</figcaption>
+				</figure>  
+				<!-- 2 myndir í röð -->
+				<figure>
+					<img src="img/2017_Harley-Davidson.jpg">
+					<figcaption>Harley Davidsson árgerð 1967</figcaption>
+				</figure>
+				<figure>
+					<img src="img/Harley-Davidson-CVO-Ultra.jpg">
+					<figcaption>Harley Davidsson árgerð 2014</figcaption>
+				</figure>      
+			</div><!-- motorhjólamyndir enda -->
+		</div>
+	</section><!-- áhugamál endar -->
+	<section class="container">
+		<h2>5.3 Innsetning kvikmyndar</h2>
+	  <div class="iframe-col-2">
+			<iframe 
+				class="gluggi"
+				name="videorammi"
+				src="https://www.youtube-nocookie.com/embed/egMWlD3fLJ8" 
+				frameborder="0" 
+				allow="autoplay; encrypted-media" 
+				allowfullscreen>
+			</iframe>
+			<!--tek út width="560" height="315" bæti við class-->
+			<p>Hér er kvikmynd sem er tengd inná síðuna frá Youtube</p>
+	  </div>
+	</section>
+	<section class="container">
+		<h3>5.4 Innsetning staðsetningarkorts</h3>
+		
+	  <div class="iframe-col-2"><!--kort-->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1740.1692209839498!2d-21.927122383745022!3d64.1413482835929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d674cb65ecde75%3A0x11daee4c4c757a2f!2zVMOma25pc2vDs2xpbm4!5e0!3m2!1sen!2sis!4v1541599281802" 
+			class="gluggi" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<p>Vísaðu á einhvern stað sem styður efni vefsins þíns ss heimili þitt eða skóli.</p>
+	  </div>
+	</section><!--kort endar-->
+	<footer class="f-container" id="verkefni">
+		<h2>Verkefnalisti</h2>
+		<section class="col-2">
+			<nav>
+				<ul class="v-takn">
+					<li>Verkefni 1.
+						<a href="verkefni-1/">HTML og CSS</a>
+					</li>
+					<li>Verkefni 2.
+						<a href="verkefni-2/">Box módelið</a>
+					</li>
+					<li>Verkefni 3.1
+						<a href="verkefni-3.1/">Skipulag 3.1</a>
+					</li>
+					<li>Verkefni 3.2
+						<a href="verkefni-3.2/">Leturfræði 3.2</a>
+					</li>
+					<li>Verkefni 4.
+						<a href="verkefni-4/">Bakgrunnar og efnisyfirlit</a>
+					</li>
+				</nav>
+				<nav>
+				<ul class="v-takn">
+				<li>Verkefni 4 
+					<a href="verkefni-4/" target="videorammi">
+						í iframe ramma 5.3 </a>
+				</li>
+				<li>Verkefni 5. Myndvinnsla (Þessi síða)
+				</li>
+				<li>Photopea: <a href="https://photopea.com">
+						Myndvinnsluforrit á netinu</a>
+				</li>
+				<li>Lesefni: <a href="http://learn.shayhowe.com/html-css/adding-media/">
+						learn.shayhowe.com</a>
+					</li>
+					<li>Verkefni 6. Sveigjanleg hönnun (Þessi síða)
+					</li>
+				</ul>
+			</nav><!--tenglar enda-->
+		</section>
+	</footer>
+		<div class="copy">
+			<div><img src="img/github-octocat.svg" width="50px" height="55px" title="github vefsíðan"></div>
+			<p>&copy; 2019 Guðmundur Jón Guðjónsson &nbsp;</p>
+	</div>
+	<a href="#top" class="btop" title="Efst á síðu"> &#8679; </a>
+</body>
+</html>
+
+
